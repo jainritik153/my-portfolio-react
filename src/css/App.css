@@ -1,0 +1,468 @@
+@import "utilities.css";
+
+:root {
+  --primary: #4b6cc1;
+  --dark: #111111;
+  --pure: #ffffff;
+  --ternary: #898989;
+  --light: #f2f2f2;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* =========================================Top Navigation ======================================== */
+.header-container {
+  background: var(--dark);
+}
+.header-container .logo {
+  font-family: "Marck Script", cursive;
+  font-size: 1.5rem;
+}
+.header-contents {
+  max-width: 85%;
+  margin: auto;
+  padding: 2.2rem 0;
+  color: var(--pure);
+}
+
+.header-navlink {
+  font-size: 1.3rem;
+  color: var(--ternary);
+  transition: all 0.4s ease;
+}
+.header-navlink:hover {
+  color: var(--pure);
+}
+.responsive-nav-container {
+  display: none;
+}
+
+/* ================================================top nav end========================================= */
+
+.burger-icon {
+  color: var(--pure);
+  display: none;
+}
+
+/* 
+===========================================Hero css=============================================== */
+section.hero {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 25px 0;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%); */
+}
+
+img {
+  max-width: 90%;
+}
+.blog-image img {
+  max-width: 100%;
+}
+
+.heading {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+.title {
+  color: var(--ternary);
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.description {
+  color: var(--dark);
+  line-height: 25px;
+  margin-top: 15px;
+}
+/* =======================================End Hero=================================================== */
+/* ================================================Button========================================== */
+
+.btn {
+  padding: 1.2rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 100px;
+}
+
+.btn-secondary {
+  background-color: var(--pure);
+  color: var(--dark);
+  margin-top: 25px;
+  /* margin-right: 25px; */
+}
+
+.btn-secondary:hover {
+  border-color: var(--pure);
+  background: transparent;
+  color: var(--pure);
+}
+
+.btn-primary {
+  background: var(--dark);
+  color: var(--pure);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border-color: var(--dark);
+  color: var(--dark);
+}
+.hero-primary-button {
+  margin-top: 25px;
+}
+/* ================================================Button========================================== */
+
+/* ==================================================About me ========================================== */
+.about-container {
+  background: var(--dark);
+  padding: 2% 0;
+}
+section.about {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: 25px 0;
+
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%); */
+}
+
+/* ====================================End About me======================================================= */
+
+/* =============================================Hire me======================================================= */
+
+section.hire-me {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2% 0;
+}
+
+section.hire-me p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+section.hire-me img {
+  width: 60%;
+}
+
+/* =============================================End Hire me======================================================= */
+
+/* =============================================footer======================================================= */
+
+section.footer {
+  background: var(--dark);
+  height: 250px;
+  clip-path: polygon(0 0, 100% 40%, 100% 100%, 0 100%);
+}
+section.footer footer {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  height: 100%;
+}
+section.footer footer .creator {
+  color: var(--ternary);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* =============================================End footer======================================================= */
+
+/*============================================Blog backfrounf image-------------------------------------*/
+
+.blog-banner {
+  background: var(--dark);
+  padding: 100px;
+}
+
+.blog-banner .banner-details h1 {
+  color: var(--pure);
+  font-size: 4rem;
+}
+.blog-banner .banner-details p {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--light);
+}
+
+/* =========================================blog navigation===================================== */
+
+.blog-navigation {
+  padding: 2rem 0;
+  background: var(--light);
+}
+
+.blog-navigation .blog-nav-item {
+  margin-right: 2rem;
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.blog-navigation .blog-nav-item:hover {
+  color: var(--ternary);
+}
+
+/* ========================================blog list=========================================== */
+
+.blog-list {
+  max-width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  row-gap: 5rem;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.blog-card {
+  transition: all 0.4s ease;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--pure);
+}
+.blog-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(-3%);
+}
+
+.blog-details {
+  padding: 1.5rem 2rem;
+}
+
+.blog-details .blog-date {
+  font-size: 13px;
+  color: var(--ternary);
+}
+.blog-image {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 98%;
+  width: 100%;
+  background: rgba(75, 108, 193, 0.8);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.blog-card:hover .blog-image .overlay {
+  opacity: 1;
+}
+
+.blog-details .blog-title h2 {
+  margin-top: 0.5rem;
+  color: var(--dark);
+  line-height: 2rem;
+}
+
+.blog-details .blog-body {
+  height: 85px;
+  overflow: hidden;
+  padding-top: 10px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.blog-details .blog-body p {
+  font-size: 17px;
+  color: var(--ternary);
+  line-height: 1.6rem;
+}
+
+/* ==============================contact =============================== */
+section.contact {
+  margin: auto;
+}
+section.contact .contact-banner {
+  background: var(--light);
+}
+.banner-content {
+  padding: 8% 5%;
+}
+.banner-content .heading {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--primary);
+}
+.banner-content .description {
+  font-size: 1.7rem;
+  text-align: center;
+  line-height: 100%;
+}
+.banner-content .title {
+  text-align: center;
+}
+.form-container {
+  padding: 10% 0;
+}
+.form-label h2 {
+  font-size: 1.3rem;
+  color: var(--ternary);
+  font-weight: 500;
+}
+.form-input {
+  width: 90%;
+  padding: 5%;
+  border: 2px solid var(--ternary);
+  border-radius: 5px;
+  margin: 3% 0;
+  background-color: var(--light);
+  outline: none;
+}
+.form-input:hover {
+  border: 2px solid var(--primary);
+  background: var(--pure);
+}
+/* ==============================contactend =============================== */
+
+/* 
+=======mobile media quries================ */
+
+@media screen and (max-width: 380px) {
+  .header-contents {
+    padding: 2rem 0;
+  }
+  .header-contents nav {
+    display: none;
+  }
+  .header-contents .burger-icon {
+    display: block;
+  }
+  .responsive-nav-container .header-navlink {
+    padding: 0.4rem 0;
+  }
+  img {
+    max-width: 100%;
+  }
+  .sec-btn-container {
+    display: flex;
+    justify-content: center;
+  }
+  /* =============================================header end=============================================== */
+
+  .heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .description {
+    font-size: 1rem;
+    margin-top: 8px;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  .hero-primary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .btn {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+  section.hero {
+    flex-direction: column-reverse;
+  }
+  section.about,
+  section.hire-me {
+    flex-direction: column;
+  }
+
+  /* ==============================blog =============================== */
+
+  .blog-banner {
+    background: var(--dark);
+    padding: 50px;
+  }
+
+  .blog-banner .banner-details h1 {
+    color: var(--pure);
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .blog-banner .banner-details p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--light);
+    text-align: center;
+  }
+
+  .blog-list {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1.8rem;
+    padding: 12px 0;
+  }
+  .blog-details {
+    padding: 1rem 1rem;
+  }
+
+  .blog-details .blog-title h2 {
+    font-size: 1.3rem;
+    line-height: normal;
+  }
+  .blog-details .blog-body p {
+    padding: 0;
+    font-size: 0.9rem;
+    line-height: normal;
+  }
+
+  .blog-navigation nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+  }
+  .blog-navigation .blog-nav-item {
+    padding: 8px 0;
+    margin-right: 0;
+  }
+  /* ==============================contact =============================== */
+  .input-container {
+    flex-direction: column;
+  }
+  section.contact {
+    max-width: 90%;
+  }
+  .banner-content .heading {
+    font-size: 2.5rem;
+  }
+  .banner-content .description {
+    font-size: 1.3rem;
+    line-height: normal;
+  }
+  .form-label h2 {
+    font-size: 1.2rem;
+  }
+  /* ==============================contactend =============================== */
+}
