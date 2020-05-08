@@ -2,7 +2,7 @@ import React from "react";
 import PrimaryButton from "../components/PrimaryButton";
 import Fade from "react-reveal/Fade";
 
-const HireMw = () => {
+const HireMe = () => {
   return (
     <div>
       <section className="hire-me flex items-center justify-between ">
@@ -17,7 +17,7 @@ const HireMw = () => {
         </div>
         <Fade right>
           <div className="flex-1 justify-center">
-            <img src={require("../img/hireme.png")}></img>
+            <img src={"/img/banner/hireme.png"}></img>
           </div>
         </Fade>
       </section>
@@ -25,4 +25,4 @@ const HireMw = () => {
   );
 };
 
-export default HireMw;
+export default HireMe;

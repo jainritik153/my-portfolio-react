@@ -4,13 +4,11 @@ import React, { useContext } from "react";
 import Fade from "react-reveal/Fade";
 
 const BlogList = (props) => {
-  const { getCategorySpecificData } = useContext(BlogContext);
+  const { getCategorySpecificData, loading } = useContext(BlogContext);
   const categorisedBlogData = getCategorySpecificData(props.category);
-
+  console.log("a----------------------loading  ==============", loading);
   const categorisedBlogView = categorisedBlogData.map((blog) => (
-    <Fade bottom>
-      <BlogCard blogDetails={blog}></BlogCard>
-    </Fade>
+    <BlogCard blogDetails={blog}></BlogCard>
   ));
 
   return (

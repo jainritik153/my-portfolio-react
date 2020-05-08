@@ -63,9 +63,6 @@ section.hero {
 img {
   max-width: 90%;
 }
-.blog-image img {
-  max-width: 100%;
-}
 
 .heading {
   font-size: 2.8rem;
@@ -250,7 +247,10 @@ section.footer footer .creator {
 .blog-image {
   position: relative;
   max-width: 100%;
-  height: auto;
+}
+.blog-image img {
+  max-width: 100%;
+  height: 200px;
 }
 
 .blog-image .overlay {
@@ -314,6 +314,8 @@ section.contact .contact-banner {
   text-align: center;
 }
 .form-container {
+  max-width: 80%;
+  margin: auto;
   padding: 10% 0;
 }
 .form-label h2 {

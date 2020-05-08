@@ -13,7 +13,6 @@ const BlogNavigation = () => {
           const path = `/blogs/${category}`;
           return (
             <NavLink className="blog-nav-item" to={path}>
-              {" "}
               {category}
             </NavLink>
           );

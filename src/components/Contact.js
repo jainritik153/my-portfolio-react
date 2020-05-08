@@ -1,6 +1,7 @@
 import React from "react";
 import PrimaryButton from "../components/PrimaryButton";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   return (
@@ -49,6 +50,7 @@ const Contact = () => {
           <PrimaryButton title="Submit Message"></PrimaryButton>
         </div>
       </div>
+      <Footer></Footer>
     </section>
   );
 };

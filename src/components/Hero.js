@@ -23,10 +23,7 @@ const Hero = () => {
 
       <Fade right>
         <div className="right flex flex-1 justify-center items-center">
-          <img
-            src={require("../img/banner/banner-image.png")}
-            alt="banner-img"
-          ></img>
+          <img src={"/img/banner/banner-image.png"} alt="banner-img"></img>
         </div>
       </Fade>
     </section>

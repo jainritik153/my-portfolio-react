@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { BlogContext } from "../Contexts/BlogDataContext";
 
 const BlogCard = (props) => {
-  console.log(props.blogDetails.imgUrl);
   return (
     <div className="blog-card">
       <div className="blog-image" href="#">

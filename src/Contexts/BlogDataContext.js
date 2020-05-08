@@ -1,10 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BlogData } from "../Data/BlogData";
+import firebase from "../firebase";
 
 export const BlogContext = React.createContext();
+var db = firebase.firestore();
 
 const BlogContextProvider = (props) => {
-  const [blogData, setBlogData] = useState(BlogData);
+  const [blogData, setBlogData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const getBlogData = async () => {
+    let snapshot = await db.collection("BlogData").get();
+    var firebaseData = snapshot.docs.map((doc) => doc.data());
+    setBlogData(firebaseData);
+    setLoading(true);
+    console.log("state datta", blogData);
+  };
+
+  useEffect(() => {
+    getBlogData();
+  }, []);
 
   const getCategorySpecificData = (category) => {
     if (category === "All") {
@@ -20,7 +35,7 @@ const BlogContextProvider = (props) => {
 
   return (
     <BlogContext.Provider
-      value={{ blogData, getCategorySpecificData, getAllCategory }}
+      value={{ blogData, loading, getCategorySpecificData, getAllCategory }}
     >
       {props.children}
     </BlogContext.Provider>

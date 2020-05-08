@@ -8,7 +8,7 @@ const AboutMe = () => {
       <section className="about flex items-center justify-between">
         <div className="flex-1">
           <Fade left>
-            <img src={require("../img/about-us.png")}></img>
+            <img src={"/img/banner/about-us.png"}></img>
           </Fade>
         </div>
         <div className="flex-1">
