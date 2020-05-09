@@ -24,28 +24,16 @@ const Navigation = () => {
           <h3 onClick={handleClick}>click</h3>
         </div>
         <nav className="flex items-center flex-1 justify-between">
-          <NavLink
-            className="header-navlink"
-            to="https://jainritik153.github.io/my-portfolio/"
-          >
+          <NavLink className="header-navlink" to="/my-portfolio/">
             About
           </NavLink>
-          <NavLink
-            className="header-navlink"
-            to="https://jainritik153.github.io/my-portfolio/projects"
-          >
+          <NavLink className="header-navlink" to="/my-portfolio/projects">
             Project
           </NavLink>
-          <NavLink
-            className="header-navlink"
-            to="https://jainritik153.github.io/my-portfolio/blogs/All"
-          >
+          <NavLink className="header-navlink" to="/my-portfolio/blogs/All">
             Blog
           </NavLink>
-          <NavLink
-            className="header-navlink"
-            to="https://jainritik153.github.io/my-portfolio/contact"
-          >
+          <NavLink className="header-navlink" to="/my-portfolio/contact">
             Contact
           </NavLink>
         </nav>
@@ -55,28 +43,28 @@ const Navigation = () => {
           <NavLink
             onClick={handleNavClick}
             className="header-navlink"
-            to="https://jainritik153.github.io/my-portfolio/"
+            to="/my-portfolio/"
           >
             About
           </NavLink>
           <NavLink
             onClick={handleNavClick}
             className="header-navlink"
-            to="https://jainritik153.github.io/my-portfolio/projects"
+            to="/my-portfolio/projects"
           >
             Project
           </NavLink>
           <NavLink
             onClick={handleNavClick}
             className="header-navlink"
-            to="https://jainritik153.github.io/my-portfolio/blogs/All"
+            to="/my-portfolio/blogs/All"
           >
             Blog
           </NavLink>
           <NavLink
             onClick={handleNavClick}
             className="header-navlink"
-            to="https://jainritik153.github.io/my-portfolio/contact"
+            to="/my-portfolio/contact"
           >
             Contact
           </NavLink>
