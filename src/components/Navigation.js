@@ -52,27 +52,31 @@ const Navigation = () => {
       </div>
       <div className="responsive-nav-container" style={{ display: toggle }}>
         <nav className="responsive-nav flex direction-column items-center">
-          <NavLink onClick={handleNavClick} className="header-navlink" to="/">
+          <NavLink
+            onClick={handleNavClick}
+            className="header-navlink"
+            to="https://jainritik153.github.io/my-portfolio/"
+          >
             About
           </NavLink>
           <NavLink
             onClick={handleNavClick}
             className="header-navlink"
-            to="/projects"
+            to="https://jainritik153.github.io/my-portfolio/projects"
           >
             Project
           </NavLink>
           <NavLink
             onClick={handleNavClick}
             className="header-navlink"
-            to="/blogs/All"
+            to="https://jainritik153.github.io/my-portfolio/blogs/All"
           >
             Blog
           </NavLink>
           <NavLink
             onClick={handleNavClick}
             className="header-navlink"
-            to="/contact"
+            to="https://jainritik153.github.io/my-portfolio/contact"
           >
             Contact
           </NavLink>
