@@ -18,17 +18,21 @@ function App() {
       </Fade>
 
       <Switch>
-        <Route path="/" component={About} exact />
         <Route
-          path="http://jainritik153.github.io/projects"
+          path="https://jainritik153.github.io/my-portfolio/"
+          component={About}
+          exact
+        />
+        <Route
+          path="https://jainritik153.github.io/my-portfolio/projects"
           component={Projects}
         />
         <Route
-          path="http://jainritik153.github.io/blogs/:category"
+          path="https://jainritik153.github.io/my-portfolio/blogs/:category"
           component={Blog}
         />
         <Route
-          path="http://jainritik153.github.io/contact"
+          path="https://jainritik153.github.io/my-portfolio/contact"
           component={Contact}
         />
         <Route component={Error} />
