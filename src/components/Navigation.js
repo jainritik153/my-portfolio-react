@@ -24,16 +24,28 @@ const Navigation = () => {
           <h3 onClick={handleClick}>click</h3>
         </div>
         <nav className="flex items-center flex-1 justify-between">
-          <NavLink className="header-navlink" to="/">
+          <NavLink
+            className="header-navlink"
+            to="https://jainritik153.github.io/my-portfolio/"
+          >
             About
           </NavLink>
-          <NavLink className="header-navlink" to="/projects">
+          <NavLink
+            className="header-navlink"
+            to="https://jainritik153.github.io/my-portfolio/projects"
+          >
             Project
           </NavLink>
-          <NavLink className="header-navlink" to="/blogs/All">
+          <NavLink
+            className="header-navlink"
+            to="https://jainritik153.github.io/my-portfolio/blogs/All"
+          >
             Blog
           </NavLink>
-          <NavLink className="header-navlink" to="/contact">
+          <NavLink
+            className="header-navlink"
+            to="https://jainritik153.github.io/my-portfolio/contact"
+          >
             Contact
           </NavLink>
         </nav>
