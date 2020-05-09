@@ -341,7 +341,7 @@ section.contact .contact-banner {
 /* 
 =======mobile media quries================ */
 
-@media screen and (max-width: 480 px) {
+@media screen and (max-width: 480px) {
   .header-contents {
     padding: 2rem 0;
   }

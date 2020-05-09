@@ -19,9 +19,18 @@ function App() {
 
       <Switch>
         <Route path="/" component={About} exact />
-        <Route path="/projects" component={Projects} />
-        <Route path="/blogs/:category" component={Blog} />
-        <Route path="/contact" component={Contact} />
+        <Route
+          path="http://jainritik153.github.io/projects"
+          component={Projects}
+        />
+        <Route
+          path="http://jainritik153.github.io/blogs/:category"
+          component={Blog}
+        />
+        <Route
+          path="http://jainritik153.github.io/contact"
+          component={Contact}
+        />
         <Route component={Error} />
       </Switch>
     </BrowserRouter>
