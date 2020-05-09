@@ -24,47 +24,43 @@ const Navigation = () => {
           <h3 onClick={handleClick}>click</h3>
         </div>
         <nav className="flex items-center flex-1 justify-between">
-          <NavLink className="header-navlink" to="/my-portfolio/">
+          <NavLink className="header-navlink" to="/">
             About
           </NavLink>
-          <NavLink className="header-navlink" to="/my-portfolio/projects">
+          <NavLink className="header-navlink" to="/projects">
             Project
           </NavLink>
-          <NavLink className="header-navlink" to="/my-portfolio/blogs/All">
+          <NavLink className="header-navlink" to="/blogs/All">
             Blog
           </NavLink>
-          <NavLink className="header-navlink" to="/my-portfolio/contact">
+          <NavLink className="header-navlink" to="/contact">
             Contact
           </NavLink>
         </nav>
       </div>
       <div className="responsive-nav-container" style={{ display: toggle }}>
         <nav className="responsive-nav flex direction-column items-center">
-          <NavLink
-            onClick={handleNavClick}
-            className="header-navlink"
-            to="/my-portfolio/"
-          >
+          <NavLink onClick={handleNavClick} className="header-navlink" to="/">
             About
           </NavLink>
           <NavLink
             onClick={handleNavClick}
             className="header-navlink"
-            to="/my-portfolio/projects"
+            to="/projects"
           >
             Project
           </NavLink>
           <NavLink
             onClick={handleNavClick}
             className="header-navlink"
-            to="/my-portfolio/blogs/All"
+            to="/blogs/All"
           >
             Blog
           </NavLink>
           <NavLink
             onClick={handleNavClick}
             className="header-navlink"
-            to="/my-portfolio/contact"
+            to="/contact"
           >
             Contact
           </NavLink>

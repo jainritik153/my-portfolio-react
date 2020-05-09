@@ -10,7 +10,7 @@ const BlogNavigation = () => {
     <div className="blog-navigation flex justify-center">
       <nav>
         {categoryList.map((category) => {
-          const path = `/my-portfolio/blogs/${category}`;
+          const path = `/blogs/${category}`;
           return (
             <NavLink className="blog-nav-item" to={path}>
               {category}
