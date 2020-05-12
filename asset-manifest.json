@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.b27b1926.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.ae90ec02.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.ae90ec02.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.8230898c.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.0905bca6.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.0905bca6.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.3511d9e1.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.3511d9e1.js.map",
-    "static/js/2.6d3baedf.chunk.js": "/my-portfolio/static/js/2.6d3baedf.chunk.js",
-    "static/js/2.6d3baedf.chunk.js.map": "/my-portfolio/static/js/2.6d3baedf.chunk.js.map",
+    "static/js/2.ea20ec47.chunk.js": "/my-portfolio/static/js/2.ea20ec47.chunk.js",
+    "static/js/2.ea20ec47.chunk.js.map": "/my-portfolio/static/js/2.ea20ec47.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "precache-manifest.d8c182d24b9244a57dae8123b27bab11.js": "/my-portfolio/precache-manifest.d8c182d24b9244a57dae8123b27bab11.js",
+    "precache-manifest.a12e26c6f3fb79dad2dc620bcfa1c538.js": "/my-portfolio/precache-manifest.a12e26c6f3fb79dad2dc620bcfa1c538.js",
     "service-worker.js": "/my-portfolio/service-worker.js",
-    "static/css/main.b27b1926.chunk.css.map": "/my-portfolio/static/css/main.b27b1926.chunk.css.map",
-    "static/js/2.6d3baedf.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.6d3baedf.chunk.js.LICENSE.txt",
+    "static/css/main.8230898c.chunk.css.map": "/my-portfolio/static/css/main.8230898c.chunk.css.map",
+    "static/js/2.ea20ec47.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.ea20ec47.chunk.js.LICENSE.txt",
     "static/media/about-us.png": "/my-portfolio/static/media/about-us.52bec8f6.png",
     "static/media/banner-image.png": "/my-portfolio/static/media/banner-image.50953027.png",
-    "static/media/hireme.png": "/my-portfolio/static/media/hireme.d9af20a6.png"
+    "static/media/hireme.png": "/my-portfolio/static/media/hireme.d9af20a6.png",
+    "static/media/js1.jpg": "/my-portfolio/static/media/js1.157b0d78.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.3511d9e1.js",
-    "static/js/2.6d3baedf.chunk.js",
-    "static/css/main.b27b1926.chunk.css",
-    "static/js/main.ae90ec02.chunk.js"
+    "static/js/2.ea20ec47.chunk.js",
+    "static/css/main.8230898c.chunk.css",
+    "static/js/main.0905bca6.chunk.js"
   ]
 }
