@@ -140,7 +140,7 @@ section.about {
 /* =============================================Hire me======================================================= */
 
 section.hire-me {
-  max-width: 80%;
+  max-width: 85%;
   margin: 0 auto;
   text-align: center;
   padding: 2% 0;
@@ -151,7 +151,7 @@ section.hire-me p {
   margin-bottom: 2rem;
 }
 section.hire-me img {
-  width: 60%;
+  max-width: 60%;
 }
 
 /* =============================================End Hire me======================================================= */
@@ -213,6 +213,11 @@ section.footer footer .creator {
 }
 
 /* ========================================blog list=========================================== */
+section.blog-section {
+  max-width: 85%;
+  margin: 0 auto;
+  background-color: aqua;
+}
 
 .blog-list {
   max-width: 85%;
@@ -289,6 +294,24 @@ section.footer footer .creator {
   color: var(--ternary);
   line-height: 1.6rem;
 }
+.tag-nav-link {
+  border: 2px solid transparent;
+  color: var(--dark);
+  background-color: var(--ternary);
+  padding: 0.3rem 1rem;
+  margin: 8px 10px;
+  border-radius: 100px;
+  color: var(--dark);
+}
+.tag-nav-link p {
+  font-size: 13px;
+}
+.tag-nav-link:hover {
+  background-color: transparent;
+  border-color: var(--ternary);
+  color: var(--dark);
+  border-width: 2px;
+}
 
 /* ==============================contact =============================== */
 section.contact {
@@ -336,6 +359,7 @@ section.contact .contact-banner {
   border: 2px solid var(--primary);
   background: var(--pure);
 }
+
 /* ==============================contactend =============================== */
 
 /* 
@@ -354,9 +378,9 @@ section.contact .contact-banner {
   .responsive-nav-container .header-navlink {
     padding: 0.4rem 0;
   }
-  img {
-    max-width: 100%;
-  }
+  /* img {
+    max-width: 300px;
+  } */
   .sec-btn-container {
     display: flex;
     justify-content: center;

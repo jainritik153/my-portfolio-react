@@ -9,12 +9,6 @@ const Footer = (props) => {
         <div className="creator">
           <p>created by RITIK JAIN</p>
         </div>
-        <div className="footer-contact">
-          <h3>Facebook</h3>
-          <h3>Twitter</h3>
-          <h3>Linked In</h3>
-          <h3>Facebook</h3>
-        </div>
       </footer>
     </section>
   );

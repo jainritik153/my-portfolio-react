@@ -2,11 +2,11 @@ import React from "react";
 import PrimaryButton from "./PrimaryButton";
 import Fade from "react-reveal/Fade";
 
-const Hero = () => {
+const Hero = (props) => {
   return (
     <section className="hero flex items-center justify-between ">
-      <Fade left>
-        <div className="left flex-1">
+      <div className="left flex-1">
+        <Fade bottom>
           <h1 className="heading">I'm a Software Engineer</h1>
           <p className="title">Mumbai, India</p>
 
@@ -18,14 +18,15 @@ const Hero = () => {
           <div className="hero-primary-button">
             <PrimaryButton title="Download Resume"></PrimaryButton>
           </div>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
 
-      <Fade right>
-        <div className="right flex flex-1 justify-center items-center">
-          <img src={"/img/banner/banner-image.png"} alt="banner-img"></img>
-        </div>
-      </Fade>
+      <div className="right flex flex-1 justify-center items-center">
+        <img
+          src={require("../img/banner/banner-image.png")}
+          alt="banner-img"
+        ></img>
+      </div>
     </section>
   );
 };

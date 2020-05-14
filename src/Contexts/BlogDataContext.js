@@ -13,8 +13,7 @@ const BlogContextProvider = (props) => {
     let snapshot = await db.collection("BlogData").get();
     var firebaseData = snapshot.docs.map((doc) => doc.data());
     setBlogData(firebaseData);
-    setLoading(true);
-    console.log("state datta", blogData);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -33,9 +32,27 @@ const BlogContextProvider = (props) => {
     return [...new Set(data)];
   };
 
+  const getAllTags = () => {
+    const tagList = blogData.map((blog) => blog.keywordarray);
+    return [...new Set(tagList.flat())];
+  };
+
+  const getKeywordSpecificBlog = (keyword) => {
+    return blogData.filter((blog) => blog.keywordarray.includes(keyword));
+  };
+
+  // console.log(filterKeywordSpecificBlog("hooks"));
+
   return (
     <BlogContext.Provider
-      value={{ blogData, loading, getCategorySpecificData, getAllCategory }}
+      value={{
+        blogData,
+        loading,
+        getCategorySpecificData,
+        getAllCategory,
+        getKeywordSpecificBlog,
+        getAllTags,
+      }}
     >
       {props.children}
     </BlogContext.Provider>

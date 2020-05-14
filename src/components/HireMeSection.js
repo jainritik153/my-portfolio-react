@@ -17,7 +17,7 @@ const HireMe = () => {
         </div>
         <Fade right>
           <div className="flex-1 justify-center">
-            <img src={"/img/banner/hireme.png"}></img>
+            <img src={require("../img/banner/hireme.png")}></img>
           </div>
         </Fade>
       </section>

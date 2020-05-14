@@ -30,7 +30,7 @@ const Navigation = () => {
           <NavLink className="header-navlink" to="/projects">
             Project
           </NavLink>
-          <NavLink className="header-navlink" to="/blogs/All">
+          <NavLink className="header-navlink" to="/blogs/category/All">
             Blog
           </NavLink>
           <NavLink className="header-navlink" to="/contact">
@@ -53,7 +53,7 @@ const Navigation = () => {
           <NavLink
             onClick={handleNavClick}
             className="header-navlink"
-            to="/blogs/All"
+            to="/blogs/category/All"
           >
             Blog
           </NavLink>

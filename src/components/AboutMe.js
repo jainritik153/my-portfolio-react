@@ -7,12 +7,12 @@ const AboutMe = () => {
     <div className="about-container">
       <section className="about flex items-center justify-between">
         <div className="flex-1">
-          <Fade left>
-            <img src={"/img/banner/about-us.png"}></img>
+          <Fade bottom>
+            <img src={require("../img/banner/about-us.png")}></img>
           </Fade>
         </div>
         <div className="flex-1">
-          <Fade right>
+          <Fade bottom>
             <h1 className="heading" style={{ color: "white" }}>
               {" "}
               About Me

@@ -8,11 +8,11 @@ const BlogCard = (props) => {
         <div className="overlay flex items-center justify-center">
           <h2 style={{ color: "white", fontWeight: 100 }}> Read Blog</h2>
         </div>
-        <img src={props.blogDetails.imgUrl}></img>
+        <img src={require("../img/blogimage/js1.jpg")}></img>
       </div>
       <div className="blog-details">
         <div className="blog-date">
-          <p>{props.blogDetails.date}</p>
+          <p>{props.blogDetails.keywordarray}</p>
         </div>
         <div className="blog-title">
           <h2>{props.blogDetails.title}</h2>
