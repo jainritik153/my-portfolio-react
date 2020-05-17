@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import PrimaryButton from "./PrimaryButton";
 import Fade from "react-reveal/Fade";
+import firebase from "../firebase";
 
 const Hero = (props) => {
+  const [resumeUrl, setResumeUrl] = useState("");
+  const getResume = () => {
+    var storage = firebase.storage();
+    var pathReference = storage.ref("Resume.pdf");
+    pathReference
+      .getDownloadURL()
+      .then(function (url) {
+        setResumeUrl(url);
+      })
+      .catch((err) => {
+        console.log("Error while fetching resume", err);
+      });
+  };
+
+  getResume();
+
   return (
     <section className="hero flex items-center justify-between ">
       <div className="left flex-1">
@@ -16,7 +33,10 @@ const Hero = (props) => {
             you'll find me cooking, gardening or working out in the park.
           </p>
           <div className="hero-primary-button">
-            <PrimaryButton title="Download Resume"></PrimaryButton>
+            <PrimaryButton
+              resumeUrl={resumeUrl}
+              title="Download Resume"
+            ></PrimaryButton>
           </div>
         </Fade>
       </div>

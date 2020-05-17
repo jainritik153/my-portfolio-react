@@ -11,11 +11,9 @@ const BlogList = (props) => {
     loading,
   } = useContext(BlogContext);
 
-  console.log(props.tagName, "   dsfsdfsdfdsf ", props.category);
-
   const renderLoading = () => {
     return (
-      <div className="flex items-center justify-center">
+      <div className="blog-list">
         <CircularProgress />
       </div>
     );
@@ -33,7 +31,7 @@ const BlogList = (props) => {
   };
 
   return (
-    <div className="flex flex-2" style={{ background: "#f2f2f2" }}>
+    <div className="flex " style={{ background: "#f2f2f2" }}>
       {loading ? renderLoading() : renderBlogCard()}
     </div>
   );

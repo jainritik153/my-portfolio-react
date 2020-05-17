@@ -1,6 +1,7 @@
 import React from "react";
 import PrimaryButton from "../components/PrimaryButton";
 import Fade from "react-reveal/Fade";
+import { NavLink } from "react-router-dom";
 
 const HireMe = () => {
   return (
@@ -12,7 +13,13 @@ const HireMe = () => {
             <p className="title">
               “I think people hire me because I am good at what I love to do.”
             </p>
-            <PrimaryButton title="Contact Me"></PrimaryButton>
+            <NavLink to="/contact">
+              <input
+                className="btn btn-primary"
+                type="submit"
+                value="Contact Me"
+              ></input>
+            </NavLink>
           </Fade>
         </div>
         <Fade right>
